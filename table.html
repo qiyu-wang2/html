@@ -3,10 +3,22 @@
 <title>HTML Tutorial</title>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+    $("table").hide();
+    });
+    $("#show").click(function(){
+    $("table").show();
+    });
+});
+    </script>
 </head>
 <body>
 
-    <table border="1">
+    <table>
         <tr id="first">
             <th>Header 1</th>
             <th>Header 2</th>
@@ -38,6 +50,8 @@
             <td>c</td>
         </tr>
     </table>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
 
 </body>
 </html>
