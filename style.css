@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+#first {
+    background-color: white;
+}
+/* #odd {
+    background-color: red;
+}
+#even {
+    background-color: blue;
+} */
+tr:nth-child(odd) {
+    background-color: yellow;
+}
+tr:nth-child(even) {
+    background-color: green;
+}
